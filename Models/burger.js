@@ -1,9 +1,9 @@
-var orm  = require('../config/orm.js');
+var orm  = require('../Config/orm.js');
 
 var burger ={
     all : function(cb){
         orm.all('burgers', function(res){
-            CDATASection(results);
+            cb(res);
         });
     },
 
