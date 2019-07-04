@@ -1,0 +1,34 @@
+.container {
+    text-align: center;
+    padding: 5px;
+}
+
+.row {
+    text-align: center;
+    padding: 5px;
+}
+
+.burgerEaten {
+   margin: 5px;
+   padding: 5px;
+}
+
+.burgerAvailable {
+    margin: 5px;
+    padding: 5px;
+}
+
+h1, h2{
+    text-align: center;
+    background-color: tan;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+body {
+  background-color: lightyellow;
+}
+
+p{
+    background-color: red;
+    font-size: 25px;
+}
