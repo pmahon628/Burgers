@@ -1,4 +1,8 @@
 <h1>Eat-Da-Burger!</h1>
+<p>Your mission, should you choose to accept it, is to create
+  a delicious list of different kinds of burgers and then remove
+  them from the list since that is what the site is designed to do. 
+</p>
 
 <main>
   <div class="container">
@@ -15,8 +19,9 @@
         {{/each}}
       </div>
 
+      <div class="container">
       <div class="col s6">
-        {{#each burgers}}
+       {{#each burgers}}
           {{#if this.devoured}}
             <div class='burgerEaten'>
               <div>
@@ -28,15 +33,27 @@
       </div>
     </div>
   </div>
+  </div>
 </main>
 
 <h2>Add A Burger Option</h2>
 
 <div class="row">
-  <div class="col s12">
+  <div class="col s6">
     <form action="/burgers" method="POST">
       <input type="text" id="name" name="burger_name" placeholder="Uber Delicious Burger">
       <button type="submit" class="addBurgerButton">Add The Burger</button>
+    </form>
+  </div>
+</div>
+
+<h2>Time to ditch that burger!</h2>
+
+<div class="row">
+  <div class="col s6">
+    <form action="/burgers" method="DESTROY">
+      <input type="text" id="name" name="burger_name" placeholder="This burger is nasty">
+      <button type="submit" class="deleteBurgerButton">Bye Bye Burger</button>
     </form>
   </div>
 </div>
